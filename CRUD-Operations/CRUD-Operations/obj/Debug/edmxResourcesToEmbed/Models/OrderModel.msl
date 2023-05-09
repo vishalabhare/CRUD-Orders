@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="OrderPlacementModelStoreContainer" CdmEntityContainer="OrderPlacementEntities">
+    <EntitySetMapping Name="Customers">
+      <EntityTypeMapping TypeName="OrderPlacementModel.Customer">
+        <MappingFragment StoreEntitySet="Customer">
+          <ScalarProperty Name="cust_id" ColumnName="cust_id" />
+          <ScalarProperty Name="cust_name" ColumnName="cust_name" />
+          <ScalarProperty Name="contact" ColumnName="contact" />
+          <ScalarProperty Name="email" ColumnName="email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Orders">
+      <EntityTypeMapping TypeName="OrderPlacementModel.Order">
+        <MappingFragment StoreEntitySet="Order">
+          <ScalarProperty Name="odr_id" ColumnName="odr_id" />
+          <ScalarProperty Name="prd_id" ColumnName="prd_id" />
+          <ScalarProperty Name="cust_id" ColumnName="cust_id" />
+          <ScalarProperty Name="quantity" ColumnName="quantity" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Products">
+      <EntityTypeMapping TypeName="OrderPlacementModel.Product">
+        <MappingFragment StoreEntitySet="Product">
+          <ScalarProperty Name="prd_id" ColumnName="prd_id" />
+          <ScalarProperty Name="prd_name" ColumnName="prd_name" />
+          <ScalarProperty Name="category" ColumnName="category" />
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="brand" ColumnName="brand" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
